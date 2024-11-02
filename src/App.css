@@ -1,38 +1,108 @@
-.App {
-  text-align: center;
+body {
+  height: 100vh;
+  overflow: hidden;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.app {
+  overflow: scroll;
+  height: 100vh;
+  scroll-snap-points-y: repeat(100vh);
+  scroll-snap-type: y mandatory;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+section {
+  height: 100vh;
+  scroll-snap-align: start;
+  position: relative;
   display: flex;
-  flex-direction: column;
   align-items: center;
+}
+
+.one {
+  background: url('./clouds.png'), linear-gradient(#170945, #1a5499);
+  background-size: cover;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.two {
+  background: url('./clouds2.png'), linear-gradient(#1a5499, #8a72db);
+  background-size: cover;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.three {
+  background: url('./clouds3.png'), linear-gradient(#8a72db, #ff9afe);
+  background-size: cover;
+}
+
+.four {
+  background: linear-gradient(#ff9afe, #ff9292);
+}
+
+.five {
+  background: linear-gradient(#ff9292, #fff89a);
+}
+
+.text-div {
+  flex: 1;
+  text-align: 'center'
+}
+
+p {
+  font-family: "Lexend Exa", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 200;
+  font-style: normal;
+  color: #fff;
+  max-width: 75%;
+}
+
+h1 {
+  font-family: "Oi", serif;
+  font-weight: 400;
+  font-style: normal;
+  letter-spacing: 5px;
+  font-size: 40px;
+  color: #fff;
+}
+
+h2 {
+  font-family: "Oi", serif;
+  font-weight: 400;
+  font-style: normal;
+  letter-spacing: 5px;
+  font-size: 20px;
+  color: #fff;
+}
+
+.oi-regular {
+  font-family: "Oi", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.lexend-exa {
+  font-family: "Lexend Exa", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 200;
+  font-style: normal;
+}
+
+.phone {
+  background-color: #242a33;
+  border-radius: 20px;
+  height: 80%;
+  width: 50%;
+  margin-left: 5%;
+  margin-right: 10%;
+}
+
+.row {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.video {
+  width: 100%;
+  border-radius: 20px;
 }
